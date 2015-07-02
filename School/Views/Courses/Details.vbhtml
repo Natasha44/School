@@ -1,9 +1,9 @@
 ﻿@ModelType School.Course
 @Code
-    ViewData("Title") = "Details"
+    ViewData("Title") = "Course Details"
 End Code
 
-<h2>Details</h2>
+<h2>Course Details</h2>
 
 <div>
     <h4>Course</h4>

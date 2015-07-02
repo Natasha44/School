@@ -1,9 +1,9 @@
 ﻿@ModelType IEnumerable(Of School.Course)
 @Code
-ViewData("Title") = "Index"
+    ViewData("Title") = "Courses"
 End Code
 
-<h2>Index</h2>
+<h2>Courses</h2>
 
 <p>
     @Html.ActionLink("Create New", "Create")

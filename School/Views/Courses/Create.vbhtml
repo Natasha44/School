@@ -1,9 +1,9 @@
 ﻿@ModelType School.Course
 @Code
-    ViewData("Title") = "Create"
+    ViewData("Title") = "Create Course"
 End Code
 
-<h2>Create</h2>
+<h2>Create Course</h2>
 
 @Using (Html.BeginForm()) 
     @Html.AntiForgeryToken()

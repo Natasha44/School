@@ -1,9 +1,9 @@
 ﻿@ModelType School.Course
 @Code
-    ViewData("Title") = "Delete"
+    ViewData("Title") = "Delete Course"
 End Code
 
-<h2>Delete</h2>
+<h2>Delete Course</h2>
 
 <h3>Are you sure you want to delete this?</h3>
 <div>
