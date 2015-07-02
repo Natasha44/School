@@ -9,13 +9,12 @@ End Code
     @Html.AntiForgeryToken()
     
     @<div class="form-horizontal">
-        <h4>Course</h4>
         <hr />
         @Html.ValidationSummary(True, "", New With { .class = "text-danger" })
         @Html.HiddenFor(Function(model) model.Id)
 
         <div class="form-group">
-            @Html.LabelFor(Function(model) model.CourseCode, htmlAttributes:= New With { .class = "control-label col-md-2" })
+            <strong class="control-label col-md-2">Course Code</strong>
             <div class="col-md-10">
                 @Html.EditorFor(Function(model) model.CourseCode, New With { .htmlAttributes = New With { .class = "form-control" } })
                 @Html.ValidationMessageFor(Function(model) model.CourseCode, "", New With { .class = "text-danger" })
@@ -23,7 +22,7 @@ End Code
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(Function(model) model.CourseName, htmlAttributes:= New With { .class = "control-label col-md-2" })
+            <strong class="control-label col-md-2">Course Name</strong>
             <div class="col-md-10">
                 @Html.EditorFor(Function(model) model.CourseName, New With { .htmlAttributes = New With { .class = "form-control" } })
                 @Html.ValidationMessageFor(Function(model) model.CourseName, "", New With { .class = "text-danger" })
@@ -31,7 +30,7 @@ End Code
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(Function(model) model.CourseDescription, htmlAttributes:= New With { .class = "control-label col-md-2" })
+            <strong class="control-label col-md-2">Course Description</strong>
             <div class="col-md-10">
                 @Html.EditorFor(Function(model) model.CourseDescription, New With { .htmlAttributes = New With { .class = "form-control" } })
                 @Html.ValidationMessageFor(Function(model) model.CourseDescription, "", New With { .class = "text-danger" })
@@ -39,7 +38,7 @@ End Code
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(Function(model) model.CourseCost, htmlAttributes:= New With { .class = "control-label col-md-2" })
+            <strong class="control-label col-md-2">Course Cost</strong>
             <div class="col-md-10">
                 @Html.EditorFor(Function(model) model.CourseCost, New With { .htmlAttributes = New With { .class = "form-control" } })
                 @Html.ValidationMessageFor(Function(model) model.CourseCost, "", New With { .class = "text-danger" })

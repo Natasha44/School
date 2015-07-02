@@ -6,11 +6,10 @@ End Code
 <h2>Course Details</h2>
 
 <div>
-    <h4>Course</h4>
     <hr />
     <dl class="dl-horizontal">
         <dt>
-            @Html.DisplayNameFor(Function(model) model.CourseCode)
+            Course Code
         </dt>
 
         <dd>
@@ -18,7 +17,7 @@ End Code
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(Function(model) model.CourseName)
+            Course Name
         </dt>
 
         <dd>
@@ -26,7 +25,7 @@ End Code
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(Function(model) model.CourseDescription)
+            Course Description
         </dt>
 
         <dd>
@@ -34,11 +33,11 @@ End Code
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(Function(model) model.CourseCost)
+           Course Cost
         </dt>
 
         <dd>
-            @Html.DisplayFor(Function(model) model.CourseCost)
+            $@Html.DisplayFor(Function(model) model.CourseCost)
         </dd>
 
     </dl>

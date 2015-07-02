@@ -6,21 +6,21 @@ End Code
 <h2>Courses</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Create New Course", "Create")
 </p>
-<table class="table table-striped table-responsive">
+<table class="table table-striped">
     <tr>
         <th>
-            @Html.DisplayNameFor(Function(model) model.CourseCode)
+            <strong>Course Code</strong>
         </th>
         <th>
-            @Html.DisplayNameFor(Function(model) model.CourseName)
+            <strong>Course Name</strong>
         </th>
         <th>
-            @Html.DisplayNameFor(Function(model) model.CourseDescription)
+            <strong>Course Description</strong>
         </th>
-        <th>
-            @Html.DisplayNameFor(Function(model) model.CourseCost)
+        <th> 
+            <strong>Course Cost</strong>
         </th>
         <th></th>
     </tr>
@@ -37,7 +37,7 @@ End Code
                 @Html.DisplayFor(Function(modelItem) item.CourseDescription)
             </td>
             <td>
-                @Html.DisplayFor(Function(modelItem) item.CourseCost)
+                $@Html.DisplayFor(Function(modelItem) item.CourseCost)
             </td>
             <td>
                 @Html.ActionLink("Edit", "Edit", New With {.id = item.Id}) |
