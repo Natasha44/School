@@ -6,6 +6,7 @@
     <title>@ViewBag.Title - School Courses Application</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    <link href="~/Content/styles.css" rel="stylesheet" />
 
 </head>
 <body>
